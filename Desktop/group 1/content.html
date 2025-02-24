@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side by Side Content</title>
+    <style>
+        /* Container for the box */
+        .box {
+            display: flex; /* Use flexbox to align items side by side */
+            align-items: center; /* Vertically center the content */
+            border: 2px solid #ccc; /* Add a border to the box */
+            padding: 20px; /* Add some padding inside the box */
+            max-width: 800px; /* Set a maximum width for the box */
+            margin: 0 auto; /* Center the box on the page */
+        }
+
+        /* Style for the image */
+        .box img {
+            max-width: 200px; /* Set a maximum width for the image */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Add some space between the image and text */
+        }
+
+        /* Style for the text content */
+        .box .content {
+            flex: 1; /* Allow the text to take up remaining space */
+        }
+
+        .box .content h2 {
+            margin-top: 0; /* Remove top margin for the heading */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- Image -->
+        <img src="images/example.jpg" alt="Example Image">
+        <!-- Text Content -->
+        <div class="content">
+            <h2>This is a Heading</h2>
+            <p>This is some example text placed next to the image. You can add more content here as needed.</p>
+        </div>
+    </div>
+</body>
+</html>
